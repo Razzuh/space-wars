@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{669A081E-B333-19CA-3118-3AB32B23612C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/player.cs">
+    <Files>
+      <File FileName="Assets/camera.cs" Line="9" Column="8" />
+      <File FileName="Assets/Scripts/player.cs" Line="41" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Space_220Wars PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
