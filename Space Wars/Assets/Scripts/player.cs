@@ -19,12 +19,11 @@ public class player : MonoBehaviour {
     private float elapsedSinceBomb;
     private float elapsedSinceMine;
 
-    //public float boostSpeed; boosting wip 9/19/18
-    //public float boostTimer; boosting wip 9/19/18
+    
 
     private bool Shooting = false;
 
-    //private bool Boosting = false; boosting wip 9/19/18
+    
 
 	// Use this for initialization
 	void Start () {
@@ -35,14 +34,14 @@ public class player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        HandleInput();
-        // Boosting = isBoosting(); boosting wip 9/19/18
+        
+        
         elapsedSinceShot += Time.deltaTime;
         elapsedSinceBomb += Time.deltaTime;
         elapsedSinceMine += Time.deltaTime;
 
         Shooting = isShooting();
-
+        HandleInput();
 
         ResetValues();
        
@@ -54,27 +53,7 @@ public class player : MonoBehaviour {
         transform.Rotate(0, 0, x);
         transform.Translate(0, z, 0);
     }
-
-    /* private bool isBoosting(){           boosting wip 9/19/18
-        if(Input.GetKey("right shift") == true){
-            boosting = true;
-            speed +=  boostSpeed;
-            float boostTime += Time.deltaTime;
-            if (boostTime >= boostTimer){
-                speed -= boostSpeed;
-                time = 0;
-                Debug.Log(boostSpeed);
-                boosting = false;
-            }
-
-            return true;
-        } else
-        {
-            var z = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-            return false;
-        }
-        
-    }*/
+    
 
     private bool isShooting(){
         
@@ -136,13 +115,13 @@ public class player : MonoBehaviour {
     {
         Shooting = false;
 
-        // Boosting = false; 9/19/18
+        
 
 
 
     }
 
-
+    
 
   
 
