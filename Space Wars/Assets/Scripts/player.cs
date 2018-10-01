@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour {
 
-
+    public GameObject bullet;
     public GameObject nose;
     public GameObject bulletPrefab;
     public GameObject bombPrefab;
@@ -14,12 +14,14 @@ public class player : MonoBehaviour {
     public float bulletDelay;
     public float bombDelay;
     public float mineDelay;
+    public const int maxHealth = 100;
+    public int currentHealth = maxHealth;
 
     private float elapsedSinceShot;
     private float elapsedSinceBomb;
     private float elapsedSinceMine;
+    private GameController gc;
 
-    
 
     private bool Shooting = false;
 
@@ -30,7 +32,11 @@ public class player : MonoBehaviour {
         //Output the current screen window width in the console
         Debug.Log("Screen Width : " + Screen.width);
         Debug.Log("Screen Height : " + Screen.height);
-	}
+
+        GameObject gcObject = GameObject.FindWithTag("GameController");
+
+        gc = gcObject.GetComponent<GameController>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -111,6 +117,23 @@ public class player : MonoBehaviour {
         
             
     }
+
+    void OnTriggerEnter2D(Collider2D c)
+    {
+        if (c.gameObject.tag != "Bullet")
+        {
+            //transform.position = new Vector3(0, 0, 0);
+
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+
+            gc.LoseHealth();
+        }
+    }
+
+
+
+
+
     private void ResetValues()
     {
         Shooting = false;

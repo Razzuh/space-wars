@@ -256,10 +256,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\borderWrap.cs" />
     <Compile Include="Assets\camera.cs" />
-    <Compile Include="Assets\Scripts\mine.cs" />
+    <Compile Include="Assets\enemy.cs" />
+    <Compile Include="Assets\enemySpawner.cs" />
+    <Compile Include="Assets\Scripts\AsteroidController.cs" />
+    <Compile Include="Assets\Scripts\asteroidSpawner.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\ObjectController.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
-    <Compile Include="Assets\Scripts\ProjectileSpawn.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ProjectileController.cs" />
+    <Compile Include="Assets\Scripts\projectiles\mine.cs" />
+    <Compile Include="Assets\Scripts\projectiles\ProjectileSpawn.cs" />
+    <Compile Include="Assets\Scripts\screen wrap\bottomSide.cs" />
+    <Compile Include="Assets\Scripts\screen wrap\leftSide.cs" />
+    <Compile Include="Assets\Scripts\screen wrap\rightSide.cs" />
+    <Compile Include="Assets\Scripts\screen wrap\topSide.cs" />
+    <Compile Include="Assets\Scripts\stroids.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spaceship_art_pack\Read Me.txt" />
