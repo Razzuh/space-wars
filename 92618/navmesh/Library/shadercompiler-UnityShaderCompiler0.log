@@ -1,0 +1,6 @@
+Base path: /Applications/Unity.app/Contents
+Cmd: initializeCompiler
+Cmd: compileSnippet
+Unhandled exception: Failed writing data to socket
+
+Quitting shader compiler process
